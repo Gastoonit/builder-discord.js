@@ -9,7 +9,7 @@
 {
     "BOT_ID": "DATA_ID",
     "BOT_TOKEN": "DATA_TOKEN",
-	"MONGO_URL": "MONGO_URL"
+    "MONGO_URL": "MONGO_URL"
 }
 ```
 - (🌟) !Puedes darme una estrella!

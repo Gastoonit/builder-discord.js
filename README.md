@@ -5,5 +5,11 @@
 - (ℹ️) Simple SlashCommandBuilder, para tener tu proyecto un poco más ordenado!
 ## 🧐 | Adicional:
 - (+) Recuerda agregar el token y la ID de tu bot al archivo JSON.
-![json_config](https://media.discordapp.net/attachments/1037465884769386538/1075152540221591632/Screenshot_20230214-173201_Chrome.jpg)
+```json
+{
+    "BOT_ID": "DATA_ID",
+    "BOT_TOKEN": "DATA_TOKEN",
+	"MONGO_URL": "MONGO_URL"
+}
+```
 - (🌟) !Puedes darme una estrella!

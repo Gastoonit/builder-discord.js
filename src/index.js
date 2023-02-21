@@ -2,18 +2,7 @@ const Discord = require("discord.js");
 const { GatewayIntentBits, EnumResolvers } = require("discord.js");
 const { readdirSync } = require("node:fs");
 const client = new Discord.Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildEmojisAndStickers,
-        GatewayIntentBits.DirectMessages,
-        GatewayIntentBits.GuildBans,
-        GatewayIntentBits.GuildInvites,
-        GatewayIntentBits.GuildWebhooks,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildIntegrations,
-        GatewayIntentBits.GuildVoiceStates
-    ]
+    intents: 3232255
 });
 const config = require("./src/json/client/bot.json");
 
@@ -36,5 +25,6 @@ for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
 /* Export */
 client.builder()
 client.eventos()
+client.mongoose()
 
 client.login(config.BOT_TOKEN);

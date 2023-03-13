@@ -12,4 +12,8 @@
     "MONGO_URL": "MONGO_URL"
 }
 ```
+- [+] Clonar
+```git
+git clone https://github.com/Gastoonit/builder-discord.js.git
+```
 - (🌟) !Puedes darme una estrella!

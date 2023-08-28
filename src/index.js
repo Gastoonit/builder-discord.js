@@ -13,18 +13,18 @@ client.slashArray = [];
 
 /* Handlers */
 for (const folder of readdirSync(`./src/handlers`)) {
-      const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
+      const files = readdirSync(`./src/handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
       );
 
       for (const file of files) {
-        require(`${process.cwd()}/src/handlers/${folder}/${file}`)(client);
+        require(`./src/handlers/${folder}/${file}`)(client);
     }
 }
 
 /* Export */
 client.builder()
 client.eventos()
-client.mongoose()
+// client.mongoose()
 
 client.login(config.BOT_TOKEN);

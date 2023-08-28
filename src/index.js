@@ -12,7 +12,7 @@ client.slashCommands = new Discord.Collection();
 client.slashArray = [];
 
 /* Handlers */
-for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
+for (const folder of readdirSync(`./src/handlers`)) {
       const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
       );

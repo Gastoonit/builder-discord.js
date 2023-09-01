@@ -1,24 +1,23 @@
-const Discord = require("discord.js");
-const { GatewayIntentBits, EnumResolvers } = require("discord.js");
+const { Client, Collection, GatewayIntentBits, EnumResolvers } = require("discord.js");
 const { readdirSync } = require("node:fs");
-const client = new Discord.Client({
+const client = new Client({
     intents: 3232255
 });
-const config = require("./src/json/client/bot.json");
+const config = require("./json/client/bot.json");
 
 module.exports = client;
 
-client.slashCommands = new Discord.Collection();
+client.slashCommands = new Collection();
 client.slashArray = [];
 
 /* Handlers */
-for (const folder of readdirSync(`./src/handlers`)) {
-      const files = readdirSync(`./src/handlers/${folder}`).filter(
+for (const folder of readdirSync(`./handlers`)) {
+      const files = readdirSync(`./handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
       );
 
       for (const file of files) {
-        require(`./src/handlers/${folder}/${file}`)(client);
+        require(`./handlers/${folder}/${file}`)(client);
     }
 }
 

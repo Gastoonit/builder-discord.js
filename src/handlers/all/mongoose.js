@@ -1,6 +1,6 @@
 {}
 /* const mongoose = require("mongoose");
-const config = require(`./json/client/bot.json`)
+const config = require(`${process.cwd()}/src/json/client/bot.json`)
 
 module.exports = (client) => {
 	client.mongoose = async () => {

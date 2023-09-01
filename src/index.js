@@ -3,7 +3,7 @@ const { readdirSync } = require("node:fs");
 const client = new Client({
     intents: 3232255
 });
-const config = require("./json/client/bot.json");
+const config = require("${process.cwd()}/src/json/client/bot.json");
 
 module.exports = client;
 
@@ -11,13 +11,13 @@ client.slashCommands = new Collection();
 client.slashArray = [];
 
 /* Handlers */
-for (const folder of readdirSync(`./handlers`)) {
-      const files = readdirSync(`./handlers/${folder}`).filter(
+for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
+      const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
       );
 
       for (const file of files) {
-        require(`./handlers/${folder}/${file}`)(client);
+        require(`${process.cwd()}/src/handlers/${folder}/${file}`)(client);
     }
 }
 

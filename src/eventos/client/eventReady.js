@@ -1,11 +1,11 @@
 const { Events } = require('discord.js');
 
 module.exports = {
-  name: Events.Ready,
+  name: Events.ClientReady,
   emiter: "once",
   run: async (client) => {
 
-   console.log("✅️ | Bot en linea")
+    console.log(`✅️ | ¡${client.user.username} en línea!`)
 
   }
 };

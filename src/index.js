@@ -1,9 +1,14 @@
 const { Client, Collection, GatewayIntentBits, EnumResolvers } = require("discord.js");
 const { readdirSync } = require("node:fs");
 const client = new Client({
-    intents: 3232255
+    intents: [
+		GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent
+	],
 });
-const config = require("${process.cwd()}/src/json/client/bot.json");
+const config = require(`${process.cwd()}/src/json/client/bot.json`);
 
 module.exports = client;
 

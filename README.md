@@ -5,7 +5,7 @@
 ## Info breve:
 - (ℹ️) Simple SlashCommandBuilder (command handler), para tener tu proyecto un poco más ordenado!
 ## Adicional:
-- (+) Recuerda agregar el token y la ID de tu bot al archivo JSON.
++ (+) Recuerda agregar el token y la ID de tu bot al archivo JSON.
 ```json
 {
     "BOT_ID": "DATA_ID",
@@ -13,9 +13,12 @@
     "MONGO_URL": "MONGO_URL"
 }
 ```
-- [+] Clonar
++ (+) Clonar
 ```git
 git clone https://github.com/Gastoonit/builder-discord.js.git
+```
++ (/) Mover los archivos afuera para el correcto funcionamiento ✔️
+```git
 mv builder-discord.js/* .
 ```
 ## Resultado:

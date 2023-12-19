@@ -2,11 +2,11 @@ const { Client, Collection, GatewayIntentBits, EnumResolvers } = require("discor
 const { readdirSync } = require("node:fs");
 const client = new Client({
     intents: [
-		GatewayIntentBits.Guilds,
+        GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMembers,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent
-	],
+    ],
 });
 const config = require(`${process.cwd()}/src/json/client/bot.json`);
 
@@ -17,11 +17,11 @@ client.slashArray = [];
 
 /* Handlers */
 for (const folder of readdirSync(`${process.cwd()}/src/handlers`)) {
-      const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
+    const files = readdirSync(`${process.cwd()}/src/handlers/${folder}`).filter(
         (file) => file.endsWith(".js")
-      );
+    );
 
-      for (const file of files) {
+    for (const file of files) {
         require(`${process.cwd()}/src/handlers/${folder}/${file}`)(client);
     }
 }

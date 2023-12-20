@@ -22,7 +22,7 @@ module.exports = (client) => {
       const data = await rest.put(Routes.applicationCommands(config.BOT_ID), {
         body: client.slashArray,
       });
-      console.log(`${data.length} | ✅️`);
+      console.log(`✅️ | Comandos cargados: ${data.length}`);
     } catch (err) {
       console.error(err);
     }

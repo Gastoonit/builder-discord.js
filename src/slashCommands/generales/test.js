@@ -8,7 +8,6 @@ module.exports = {
 	    
      return interaction.reply({
 	content: "- 🙋 | hola, soy un bot alegre! // hi i'm a happy bot",
-        embeds: [Embed],
 	ephemeral: false
      });
 

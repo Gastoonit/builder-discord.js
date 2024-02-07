@@ -5,11 +5,12 @@ module.exports = {
     .setName("hola")
     .setDescription("hola, descripción!"),
     run: async (client, interaction) => {
-
- return interaction.reply({
-	 content: "- 🙋 | hola, soy un bot alegre! // hi i'm a happy bot",
-	 ephemeral: true
- })
+	    
+     return interaction.reply({
+	content: "- 🙋 | hola, soy un bot alegre! // hi i'm a happy bot",
+        embeds: [Embed],
+	ephemeral: false
+     });
 
  }
 }

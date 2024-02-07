@@ -12,8 +12,8 @@ module.exports = {
       .setColor("Random")
 
      return interaction.reply({
-	       content: "- 🙋 | hola, soy un bot alegre! // hi i'm a happy bot",
-	       embeds: [Embed],
+	  content: "- 🙋 | hola, soy un bot alegre! // hi i'm a happy bot",
+	  embeds: [Embed],
      });
 
  }

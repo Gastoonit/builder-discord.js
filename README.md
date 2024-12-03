@@ -13,7 +13,7 @@
     "MONGO_URL": "MONGO_URL"
 }
 ```
-+ (+) Clonar
++ (+) Clonar repositorio
 ```git
 git clone https://github.com/Gastoonit/builder-discord.js.git
 ```

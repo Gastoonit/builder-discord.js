@@ -12,6 +12,7 @@ const config = require(`${process.cwd()}/src/json/client/bot.json`);
 
 module.exports = client;
 
+// Collections
 client.slashCommands = new Collection();
 client.slashArray = [];
 

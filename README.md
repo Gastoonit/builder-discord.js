@@ -8,9 +8,9 @@
 + (+) Recuerda agregar el token y la ID de tu bot al archivo JSON.
 ```json
 {
-    "BOT_ID": "DATA_ID",
-    "BOT_TOKEN": "DATA_TOKEN",
-    "MONGO_URL": "MONGO_URL"
+    "BOT_ID": "1492250604884594939",
+    "BOT_TOKEN": "DATAMTQ5MjI1MDYwNDg4NDU5NDkzOQ.GbBLQT.VYf4RtOEO_5p22q9thplDDPQNkfeUMX8q1y-2gTOKEN",
+    "MONGO_URL": "MTQ5MjI1MDYwNDg4NDU5NDkzOQ.GbBLQT.VYf4RtOEO_5p22q9thplDDPQNkfeUMX8q1y-2g"
 }
 ```
 + (+) Clonar repositorio
